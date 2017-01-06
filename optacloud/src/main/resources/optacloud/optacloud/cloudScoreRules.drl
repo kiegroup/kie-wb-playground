@@ -1,0 +1,63 @@
+package optacloud.optacloud;
+
+import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScoreHolder;
+
+import optacloud.optacloud.Computer;
+import optacloud.optacloud.Process;
+
+global HardSoftScoreHolder scoreHolder;
+
+// ############################################################################
+// Hard constraints
+// ############################################################################
+
+rule "Hard CPU power capacity"
+    when
+        $computer : Computer($cpuPower : cpuPower)
+        $requiredCpuPowerTotal : Number(intValue > $cpuPower) from accumulate(
+            Process(
+                computer == $computer,
+                $requiredCpuPower : requiredCpuPower),
+            sum($requiredCpuPower)
+        )
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, $cpuPower - $requiredCpuPowerTotal.intValue());
+end
+
+rule "Hard memory capacity"
+    when
+        $computer : Computer($memory : memory)
+        $requiredMemoryTotal : Number(intValue > $memory) from accumulate(
+            Process(
+                computer == $computer,
+                $requiredMemory : requiredMemory),
+            sum($requiredMemory)
+        )
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, $memory - $requiredMemoryTotal.intValue());
+end
+
+rule "Hard network bandwidth capacity"
+    when
+        $computer : Computer($networkBandwidth : networkBandwidth)
+        $requiredNetworkBandwidthTotal : Number(intValue > $networkBandwidth) from accumulate(
+            Process(
+                computer == $computer,
+                $requiredNetworkBandwidth : requiredNetworkBandwidth),
+            sum($requiredNetworkBandwidth)
+        )
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, $networkBandwidth - $requiredNetworkBandwidthTotal.intValue());
+end
+
+// ############################################################################
+// Soft constraints
+// ############################################################################
+
+rule "Hosting cost"
+    when
+        $computer : Computer($cost : cost)
+        exists Process(computer == $computer)
+    then
+        scoreHolder.addSoftConstraintMatch(kcontext, - $cost);
+end

@@ -1,0 +1,16 @@
+package mortgages.mortgages
+
+import mortgages.mortgages.LoanApplication
+import mortgages.mortgages.Bankruptcy
+
+rule "Bankruptcy history"
+	salience 10
+	dialect "mvel"
+	when
+		a : LoanApplication( )
+		exists (Bankruptcy( yearOfOccurrence > "1990" || amountOwed > "10000" )) 
+	then
+		a.setApproved( false );
+		a.setExplanation( "has been bankrupt" );
+		retract( a );
+end

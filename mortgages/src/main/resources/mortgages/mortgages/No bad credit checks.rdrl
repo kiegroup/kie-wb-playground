@@ -1,0 +1,16 @@
+package mortgages.mortgages
+
+import mortgages.mortgages.LoanApplication
+import mortgages.mortgages.Applicant
+
+rule "No bad credit checks"
+	salience 10
+	dialect "mvel"
+	when
+		app : LoanApplication( )
+		( Applicant( creditRating == "OK" ) or Applicant( creditRating == "Sub prime" ) )
+	then
+		app.setApproved( false );
+		app.setExplanation( "Only AA" );
+		retract( app );
+end

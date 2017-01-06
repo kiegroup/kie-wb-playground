@@ -1,0 +1,13 @@
+<solver xStreamId="1">
+  <scanAnnotatedClasses xStreamId="2"/>
+  <scoreDirectorFactory xStreamId="3">
+    <scoreDefinitionType>HARD_SOFT</scoreDefinitionType>
+    <ksessionName>defaultKieSession</ksessionName>
+  </scoreDirectorFactory>
+  <termination xStreamId="4">
+    <secondsSpentLimit>30</secondsSpentLimit>
+    <minutesSpentLimit>0</minutesSpentLimit>
+    <hoursSpentLimit>0</hoursSpentLimit>
+    <daysSpentLimit>0</daysSpentLimit>
+  </termination>
+</solver>
