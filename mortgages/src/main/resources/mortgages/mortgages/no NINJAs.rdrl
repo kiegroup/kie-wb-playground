@@ -1,0 +1,16 @@
+package mortgages.mortgages
+
+import mortgages.mortgages.LoanApplication
+import mortgages.mortgages.IncomeSource
+
+rule "no NINJAs"
+	salience 10
+	dialect "mvel"
+	when
+		app : LoanApplication( )
+		not (IncomeSource( )) 
+	then
+		app.setApproved( false );
+		app.setExplanation( "no NINJAs" );
+		retract( app );
+end

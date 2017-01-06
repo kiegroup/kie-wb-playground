@@ -1,0 +1,16 @@
+package mortgages.mortgages
+
+import mortgages.mortgages.LoanApplication
+import mortgages.mortgages.Applicant
+
+rule "Underage"
+	salience 10
+	dialect "mvel"
+	when
+		application : LoanApplication( )
+		Applicant( age < "21" )
+	then
+		application.setApproved( false );
+		application.setExplanation( "Underage" );
+		retract( application );
+end
