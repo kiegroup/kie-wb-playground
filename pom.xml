@@ -60,7 +60,9 @@
           <transformationSets>
             <transformationSet>
               <dir>${project.basedir}</dir>
-              <includes>*/pom.xml</includes>
+              <includes>
+                <include>*/pom.xml</include>
+              </includes>
               <stylesheet>src/main/xslt/stylesheet-kie-wb-playground.xsl</stylesheet>
               <outputDir>${project.build.directory}/kie-wb-playground-xslt</outputDir>
             </transformationSet>
