@@ -18,18 +18,14 @@
     </fileSet>
     <fileSet>
       <useDefaultExcludes>false</useDefaultExcludes>
+      <includes>
+        <include>mortgages/**</include>
+        <include>optacloud/**</include>
+      </includes>
       <excludes>
         <exclude>**/*.iml</exclude>
-        <exclude>.idea/**</exclude>
-        <exclude>.git/**</exclude>
-        <exclude>.gitignore</exclude>
         <exclude>*/.gitignore</exclude>
-        <exclude>LICENSE*</exclude>
-        <exclude>README.md</exclude>
-        <exclude>src/**</exclude>
-        <exclude>/target/**</exclude>
         <exclude>*/target/**</exclude>
-        <exclude>pom.xml</exclude>
         <exclude>*/pom.xml</exclude>
       </excludes>
     </fileSet>
