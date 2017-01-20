@@ -1,0 +1,232 @@
+<planning-problem class="employeerostering.employeerostering.EmployeeRoster">
+  <employeeList>
+    <employeerostering.employeerostering.Employee>
+      <name>John</name>
+      <skills>
+        <employeerostering.employeerostering.Skill>
+          <name>consulting</name>
+        </employeerostering.employeerostering.Skill>
+        <employeerostering.employeerostering.Skill>
+          <name>translation</name>
+        </employeerostering.employeerostering.Skill>
+      </skills>
+    </employeerostering.employeerostering.Employee>
+    <employeerostering.employeerostering.Employee>
+      <name>Ann</name>
+      <skills>
+        <employeerostering.employeerostering.Skill reference="../../../employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill"/>
+      </skills>
+    </employeerostering.employeerostering.Employee>
+    <employeerostering.employeerostering.Employee>
+      <name>Paul</name>
+      <skills>
+        <employeerostering.employeerostering.Skill>
+          <name>maintenance</name>
+        </employeerostering.employeerostering.Skill>
+      </skills>
+    </employeerostering.employeerostering.Employee>
+    <employeerostering.employeerostering.Employee>
+      <name>Carla</name>
+      <skills>
+        <employeerostering.employeerostering.Skill reference="../../../employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill"/>
+        <employeerostering.employeerostering.Skill reference="../../../employeerostering.employeerostering.Employee[3]/skills/employeerostering.employeerostering.Skill"/>
+      </skills>
+    </employeerostering.employeerostering.Employee>
+    <employeerostering.employeerostering.Employee>
+      <name>Brian</name>
+      <skills>
+        <employeerostering.employeerostering.Skill reference="../../../employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill[2]"/>
+      </skills>
+    </employeerostering.employeerostering.Employee>
+    <employeerostering.employeerostering.Employee>
+      <name>Unskilled</name>
+      <skills class="empty-list"/>
+    </employeerostering.employeerostering.Employee>
+  </employeeList>
+  <shiftList>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-01T00:00</startTime>
+        <endTime>2017-01-01T07:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-01T08:00</startTime>
+        <endTime>2017-01-01T15:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee[3]/skills/employeerostering.employeerostering.Skill"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-01T16:00</startTime>
+        <endTime>2017-01-01T23:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill[2]"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-02T00:00</startTime>
+        <endTime>2017-01-02T07:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill[2]"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-02T08:00</startTime>
+        <endTime>2017-01-02T15:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee[3]/skills/employeerostering.employeerostering.Skill"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-02T16:00</startTime>
+        <endTime>2017-01-02T23:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-03T00:00</startTime>
+        <endTime>2017-01-03T07:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-03T08:00</startTime>
+        <endTime>2017-01-03T15:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill[2]"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-03T16:00</startTime>
+        <endTime>2017-01-03T23:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill[2]"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-04T00:00</startTime>
+        <endTime>2017-01-04T07:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee[3]/skills/employeerostering.employeerostering.Skill"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-04T08:00</startTime>
+        <endTime>2017-01-04T15:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill[2]"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-04T16:00</startTime>
+        <endTime>2017-01-04T23:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-05T00:00</startTime>
+        <endTime>2017-01-05T07:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill[2]"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-05T08:00</startTime>
+        <endTime>2017-01-05T15:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill"/>
+    </employeerostering.employeerostering.Shift>
+    <employeerostering.employeerostering.Shift>
+      <timeslot>
+        <startTime>2017-01-05T16:00</startTime>
+        <endTime>2017-01-05T23:59</endTime>
+      </timeslot>
+      <requiredSkill reference="../../../employeeList/employeerostering.employeerostering.Employee[3]/skills/employeerostering.employeerostering.Skill"/>
+    </employeerostering.employeerostering.Shift>
+  </shiftList>
+  <skillList>
+    <employeerostering.employeerostering.Skill reference="../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill"/>
+    <employeerostering.employeerostering.Skill reference="../../employeeList/employeerostering.employeerostering.Employee/skills/employeerostering.employeerostering.Skill[2]"/>
+    <employeerostering.employeerostering.Skill reference="../../employeeList/employeerostering.employeerostering.Employee[3]/skills/employeerostering.employeerostering.Skill"/>
+  </skillList>
+  <timeslotList>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[2]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[3]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[4]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[5]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[6]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[7]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[8]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[9]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[10]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[11]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[12]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[13]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[14]/timeslot"/>
+    <employeerostering.employeerostering.Timeslot reference="../../shiftList/employeerostering.employeerostering.Shift[15]/timeslot"/>
+  </timeslotList>
+  <shiftAssignmentList>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[2]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[3]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[4]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[5]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[6]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[7]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[8]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[9]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[10]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[11]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[12]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[13]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[14]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+    <employeerostering.employeerostering.ShiftAssignment>
+      <shift reference="../../../shiftList/employeerostering.employeerostering.Shift[15]"/>
+    </employeerostering.employeerostering.ShiftAssignment>
+  </shiftAssignmentList>
+  <dayOffRequestList>
+    <employeerostering.employeerostering.DayOffRequest>
+      <employee reference="../../../employeeList/employeerostering.employeerostering.Employee"/>
+      <date>2017-01-01</date>
+    </employeerostering.employeerostering.DayOffRequest>
+    <employeerostering.employeerostering.DayOffRequest>
+      <employee reference="../../../employeeList/employeerostering.employeerostering.Employee[2]"/>
+      <date>2017-01-02</date>
+    </employeerostering.employeerostering.DayOffRequest>
+  </dayOffRequestList>
+</planning-problem>
