@@ -34,6 +34,7 @@
   <description>KIE Workbench Playground Parent</description>
 
   <modules>
+    <module>employee-rostering</module>
     <module>optacloud</module>
     <module>mortgages</module>
   </modules>

@@ -19,6 +19,7 @@
     <fileSet>
       <useDefaultExcludes>false</useDefaultExcludes>
       <includes>
+        <include>employee-rostering/**</include>
         <include>mortgages/**</include>
         <include>optacloud/**</include>
       </includes>
