@@ -35,6 +35,7 @@
 
   <modules>
     <module>employee-rostering</module>
+    <module>evaluation</module>
     <module>optacloud</module>
     <module>mortgages</module>
   </modules>
