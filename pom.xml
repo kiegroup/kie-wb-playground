@@ -38,6 +38,7 @@
     <module>evaluation</module>
     <module>optacloud</module>
     <module>mortgages</module>
+    <module>appformer-demo</module>
   </modules>
 
   <build>
@@ -63,9 +64,20 @@
             <transformationSet>
               <dir>${project.basedir}</dir>
               <includes>
-                <include>*/pom.xml</include>
+                <include>employee-rostering/pom.xml</include>
+                <include>evaluation/pom.xml</include>
+                <include>mortgages/pom.xml</include>
+                <include>optacloud/pom.xml</include>
               </includes>
               <stylesheet>src/main/xslt/stylesheet-kie-wb-playground.xsl</stylesheet>
+              <outputDir>${project.build.directory}/kie-wb-playground-xslt</outputDir>
+            </transformationSet>
+            <transformationSet>
+              <dir>${project.basedir}</dir>
+              <includes>
+                <include>appformer-demo/pom.xml</include>
+              </includes>
+              <stylesheet>src/main/xslt/stylesheet-identity.xsl</stylesheet>
               <outputDir>${project.build.directory}/kie-wb-playground-xslt</outputDir>
             </transformationSet>
           </transformationSets>
