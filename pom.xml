@@ -40,10 +40,6 @@
     <module>mortgages</module>
   </modules>
 
-  <properties>
-    <enforcer.failOnDuplicatedClasses>true</enforcer.failOnDuplicatedClasses>
-  </properties>
-
   <build>
     <plugins>
       <plugin>
