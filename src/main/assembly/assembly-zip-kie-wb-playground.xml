@@ -38,6 +38,7 @@
         <include>evaluation/**</include>
         <include>mortgages/**</include>
         <include>optacloud/**</include>
+        <include>appformer-demo/**</include>
       </includes>
       <excludes>
         <exclude>**/*.iml</exclude>
