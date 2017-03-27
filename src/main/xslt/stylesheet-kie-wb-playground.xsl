@@ -38,7 +38,7 @@
   <xsl:template match="comment()[contains(., 'The file is modified by XSL transformation before kie-wb-playground.zip file is created.')]"/>
 
   <!-- Set version to 1.0.0-SNAPSHOT -->
-  <xsl:template match="m:artifactId">
+  <xsl:template match="m:project/m:artifactId">
     <xsl:copy-of select="."/>
     <groupId><xsl:value-of select="current()"/></groupId>
     <version>1.0.0-SNAPSHOT</version>
