@@ -1,0 +1,374 @@
+<curriculumcourse.curriculumcourse.CourseSchedule>
+  <id>0</id>
+  <name>Curriculum course scheduling example</name>
+  <teacherList>
+    <curriculumcourse.curriculumcourse.Teacher>
+      <id>0</id>
+      <code>Teacher 1</code>
+    </curriculumcourse.curriculumcourse.Teacher>
+    <curriculumcourse.curriculumcourse.Teacher>
+      <id>1</id>
+      <code>Teacher 2</code>
+    </curriculumcourse.curriculumcourse.Teacher>
+    <curriculumcourse.curriculumcourse.Teacher>
+      <id>2</id>
+      <code>Teacher 3</code>
+    </curriculumcourse.curriculumcourse.Teacher>
+    <curriculumcourse.curriculumcourse.Teacher>
+      <id>3</id>
+      <code>Teacher 4</code>
+    </curriculumcourse.curriculumcourse.Teacher>
+  </teacherList>
+  <curriculumList>
+    <curriculumcourse.curriculumcourse.Curriculum>
+      <id>0</id>
+      <code>Science</code>
+    </curriculumcourse.curriculumcourse.Curriculum>
+    <curriculumcourse.curriculumcourse.Curriculum>
+      <id>1</id>
+      <code>Humanities</code>
+    </curriculumcourse.curriculumcourse.Curriculum>
+  </curriculumList>
+  <courseList>
+    <curriculumcourse.curriculumcourse.Course>
+      <id>0</id>
+      <code>Math</code>
+      <teacher reference="../../../teacherList/curriculumcourse.curriculumcourse.Teacher[1]"/>
+      <lectureSize>2</lectureSize>
+      <minWorkingDaySize>2</minWorkingDaySize>
+      <curriculumList>
+        <curriculumcourse.curriculumcourse.Curriculum reference="../../../../curriculumList/curriculumcourse.curriculumcourse.Curriculum[1]"/>
+      </curriculumList>
+      <studentSize>50</studentSize>
+    </curriculumcourse.curriculumcourse.Course>
+    <curriculumcourse.curriculumcourse.Course>
+      <id>1</id>
+      <code>Physics</code>
+      <teacher reference="../../../teacherList/curriculumcourse.curriculumcourse.Teacher[2]"/>
+      <lectureSize>2</lectureSize>
+      <minWorkingDaySize>1</minWorkingDaySize>
+      <curriculumList>
+        <curriculumcourse.curriculumcourse.Curriculum reference="../../../../curriculumList/curriculumcourse.curriculumcourse.Curriculum[1]"/>
+      </curriculumList>
+      <studentSize>50</studentSize>
+    </curriculumcourse.curriculumcourse.Course>
+    <curriculumcourse.curriculumcourse.Course>
+      <id>2</id>
+      <code>Chemistry</code>
+      <teacher reference="../../../teacherList/curriculumcourse.curriculumcourse.Teacher[2]"/>
+      <lectureSize>2</lectureSize>
+      <minWorkingDaySize>1</minWorkingDaySize>
+      <curriculumList>
+        <curriculumcourse.curriculumcourse.Curriculum reference="../../../../curriculumList/curriculumcourse.curriculumcourse.Curriculum[1]"/>
+      </curriculumList>
+      <studentSize>50</studentSize>
+    </curriculumcourse.curriculumcourse.Course>
+    <curriculumcourse.curriculumcourse.Course>
+      <id>3</id>
+      <code>Philosophy</code>
+      <teacher reference="../../../teacherList/curriculumcourse.curriculumcourse.Teacher[4]"/>
+      <lectureSize>2</lectureSize>
+      <minWorkingDaySize>1</minWorkingDaySize>
+      <curriculumList>
+        <curriculumcourse.curriculumcourse.Curriculum reference="../../../../curriculumList/curriculumcourse.curriculumcourse.Curriculum[2]"/>
+      </curriculumList>
+      <studentSize>50</studentSize>
+    </curriculumcourse.curriculumcourse.Course>
+    <curriculumcourse.curriculumcourse.Course>
+      <id>4</id>
+      <code>History</code>
+      <teacher reference="../../../teacherList/curriculumcourse.curriculumcourse.Teacher[3]"/>
+      <lectureSize>2</lectureSize>
+      <minWorkingDaySize>2</minWorkingDaySize>
+      <curriculumList>
+        <curriculumcourse.curriculumcourse.Curriculum reference="../../../../curriculumList/curriculumcourse.curriculumcourse.Curriculum[2]"/>
+      </curriculumList>
+      <studentSize>50</studentSize>
+    </curriculumcourse.curriculumcourse.Course>
+    <curriculumcourse.curriculumcourse.Course>
+      <id>5</id>
+      <code>Art</code>
+      <teacher reference="../../../teacherList/curriculumcourse.curriculumcourse.Teacher[3]"/>
+      <lectureSize>2</lectureSize>
+      <minWorkingDaySize>1</minWorkingDaySize>
+      <curriculumList>
+        <curriculumcourse.curriculumcourse.Curriculum reference="../../../../curriculumList/curriculumcourse.curriculumcourse.Curriculum[2]"/>
+      </curriculumList>
+      <studentSize>50</studentSize>
+    </curriculumcourse.curriculumcourse.Course>
+    <curriculumcourse.curriculumcourse.Course>
+      <id>6</id>
+      <code>English</code>
+      <teacher reference="../../../teacherList/curriculumcourse.curriculumcourse.Teacher[1]"/>
+      <lectureSize>3</lectureSize>
+      <minWorkingDaySize>3</minWorkingDaySize>
+      <curriculumList>
+        <curriculumcourse.curriculumcourse.Curriculum reference="../../../../curriculumList/curriculumcourse.curriculumcourse.Curriculum[1]"/>
+        <curriculumcourse.curriculumcourse.Curriculum reference="../../../../curriculumList/curriculumcourse.curriculumcourse.Curriculum[2]"/>
+      </curriculumList>
+      <studentSize>150</studentSize>
+    </curriculumcourse.curriculumcourse.Course>
+    <curriculumcourse.curriculumcourse.Course>
+      <id>7</id>
+      <code>German</code>
+      <teacher reference="../../../teacherList/curriculumcourse.curriculumcourse.Teacher[4]"/>
+      <lectureSize>3</lectureSize>
+      <minWorkingDaySize>3</minWorkingDaySize>
+      <curriculumList>
+        <curriculumcourse.curriculumcourse.Curriculum reference="../../../../curriculumList/curriculumcourse.curriculumcourse.Curriculum[1]"/>
+        <curriculumcourse.curriculumcourse.Curriculum reference="../../../../curriculumList/curriculumcourse.curriculumcourse.Curriculum[2]"/>
+      </curriculumList>
+      <studentSize>150</studentSize>
+    </curriculumcourse.curriculumcourse.Course>
+  </courseList>
+  <dayList>
+    <curriculumcourse.curriculumcourse.Day>
+      <id>0</id>
+      <dayIndex>0</dayIndex>
+      <periodList>
+        <curriculumcourse.curriculumcourse.Period>
+          <id>0</id>
+          <day reference="../../../../curriculumcourse.curriculumcourse.Day[1]"/>
+          <timeslot>
+            <id>0</id>
+            <timeslotIndex>0</timeslotIndex>
+          </timeslot>
+        </curriculumcourse.curriculumcourse.Period>
+        <curriculumcourse.curriculumcourse.Period>
+          <id>1</id>
+          <day reference="../../../../curriculumcourse.curriculumcourse.Day[1]"/>
+          <timeslot>
+            <id>1</id>
+            <timeslotIndex>1</timeslotIndex>
+          </timeslot>
+        </curriculumcourse.curriculumcourse.Period>
+        <curriculumcourse.curriculumcourse.Period>
+          <id>2</id>
+          <day reference="../../../../curriculumcourse.curriculumcourse.Day[1]"/>
+          <timeslot>
+            <id>2</id>
+            <timeslotIndex>2</timeslotIndex>
+          </timeslot>
+        </curriculumcourse.curriculumcourse.Period>
+        <curriculumcourse.curriculumcourse.Period>
+          <id>3</id>
+          <day reference="../../../../curriculumcourse.curriculumcourse.Day[1]"/>
+          <timeslot>
+            <id>3</id>
+            <timeslotIndex>3</timeslotIndex>
+          </timeslot>
+        </curriculumcourse.curriculumcourse.Period>
+      </periodList>
+    </curriculumcourse.curriculumcourse.Day>
+    <curriculumcourse.curriculumcourse.Day>
+      <id>1</id>
+      <dayIndex>1</dayIndex>
+      <periodList>
+        <curriculumcourse.curriculumcourse.Period>
+          <id>4</id>
+          <day reference="../../../../curriculumcourse.curriculumcourse.Day[2]"/>
+          <timeslot
+              reference="../../../../curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[1]/timeslot"/>
+        </curriculumcourse.curriculumcourse.Period>
+        <curriculumcourse.curriculumcourse.Period>
+          <id>5</id>
+          <day reference="../../../../curriculumcourse.curriculumcourse.Day[2]"/>
+          <timeslot
+              reference="../../../../curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[2]/timeslot"/>
+        </curriculumcourse.curriculumcourse.Period>
+        <curriculumcourse.curriculumcourse.Period>
+          <id>6</id>
+          <day reference="../../../../curriculumcourse.curriculumcourse.Day[2]"/>
+          <timeslot
+              reference="../../../../curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[3]/timeslot"/>
+        </curriculumcourse.curriculumcourse.Period>
+        <curriculumcourse.curriculumcourse.Period>
+          <id>7</id>
+          <day reference="../../../../curriculumcourse.curriculumcourse.Day[2]"/>
+          <timeslot
+              reference="../../../../curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[4]/timeslot"/>
+        </curriculumcourse.curriculumcourse.Period>
+      </periodList>
+    </curriculumcourse.curriculumcourse.Day>
+    <curriculumcourse.curriculumcourse.Day>
+      <id>2</id>
+      <dayIndex>2</dayIndex>
+      <periodList>
+        <curriculumcourse.curriculumcourse.Period>
+          <id>8</id>
+          <day reference="../../../../curriculumcourse.curriculumcourse.Day[3]"/>
+          <timeslot
+              reference="../../../../curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[1]/timeslot"/>
+        </curriculumcourse.curriculumcourse.Period>
+        <curriculumcourse.curriculumcourse.Period>
+          <id>9</id>
+          <day reference="../../../../curriculumcourse.curriculumcourse.Day[3]"/>
+          <timeslot
+              reference="../../../../curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[2]/timeslot"/>
+        </curriculumcourse.curriculumcourse.Period>
+        <curriculumcourse.curriculumcourse.Period>
+          <id>10</id>
+          <day reference="../../../../curriculumcourse.curriculumcourse.Day[3]"/>
+          <timeslot
+              reference="../../../../curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[3]/timeslot"/>
+        </curriculumcourse.curriculumcourse.Period>
+        <curriculumcourse.curriculumcourse.Period>
+          <id>11</id>
+          <day reference="../../../../curriculumcourse.curriculumcourse.Day[3]"/>
+          <timeslot
+              reference="../../../../curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[4]/timeslot"/>
+        </curriculumcourse.curriculumcourse.Period>
+      </periodList>
+    </curriculumcourse.curriculumcourse.Day>
+  </dayList>
+  <timeslotList>
+    <curriculumcourse.curriculumcourse.Timeslot
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[1]/timeslot"/>
+    <curriculumcourse.curriculumcourse.Timeslot
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[2]/timeslot"/>
+    <curriculumcourse.curriculumcourse.Timeslot
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[3]/timeslot"/>
+    <curriculumcourse.curriculumcourse.Timeslot
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[4]/timeslot"/>
+  </timeslotList>
+  <periodList>
+    <curriculumcourse.curriculumcourse.Period
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[1]"/>
+    <curriculumcourse.curriculumcourse.Period
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[2]"/>
+    <curriculumcourse.curriculumcourse.Period
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[3]"/>
+    <curriculumcourse.curriculumcourse.Period
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[1]/periodList/curriculumcourse.curriculumcourse.Period[4]"/>
+    <curriculumcourse.curriculumcourse.Period
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[2]/periodList/curriculumcourse.curriculumcourse.Period[1]"/>
+    <curriculumcourse.curriculumcourse.Period
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[2]/periodList/curriculumcourse.curriculumcourse.Period[2]"/>
+    <curriculumcourse.curriculumcourse.Period
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[2]/periodList/curriculumcourse.curriculumcourse.Period[3]"/>
+    <curriculumcourse.curriculumcourse.Period
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[2]/periodList/curriculumcourse.curriculumcourse.Period[4]"/>
+    <curriculumcourse.curriculumcourse.Period
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[3]/periodList/curriculumcourse.curriculumcourse.Period[1]"/>
+    <curriculumcourse.curriculumcourse.Period
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[3]/periodList/curriculumcourse.curriculumcourse.Period[2]"/>
+    <curriculumcourse.curriculumcourse.Period
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[3]/periodList/curriculumcourse.curriculumcourse.Period[3]"/>
+    <curriculumcourse.curriculumcourse.Period
+        reference="../../dayList/curriculumcourse.curriculumcourse.Day[3]/periodList/curriculumcourse.curriculumcourse.Period[4]"/>
+  </periodList>
+  <roomList>
+    <curriculumcourse.curriculumcourse.Room>
+      <id>0</id>
+      <code>A-1</code>
+      <capacity>150</capacity>
+    </curriculumcourse.curriculumcourse.Room>
+    <curriculumcourse.curriculumcourse.Room>
+      <id>1</id>
+      <code>B-1</code>
+      <capacity>50</capacity>
+    </curriculumcourse.curriculumcourse.Room>
+    <curriculumcourse.curriculumcourse.Room>
+      <id>2</id>
+      <code>B-2</code>
+      <capacity>50</capacity>
+    </curriculumcourse.curriculumcourse.Room>
+    <curriculumcourse.curriculumcourse.Room>
+      <id>3</id>
+      <code>B-3</code>
+      <capacity>50</capacity>
+    </curriculumcourse.curriculumcourse.Room>
+  </roomList>
+  <lectureList>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>0</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[1]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>1</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[1]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>2</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[5]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>3</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[5]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>4</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[7]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>5</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[7]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>6</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[7]"/>
+      <lectureIndexInCourse>2</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>7</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[8]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>8</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[8]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>9</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[8]"/>
+      <lectureIndexInCourse>2</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>10</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[2]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>11</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[2]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>12</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[3]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>13</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[3]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>14</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[4]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>15</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[4]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>16</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[6]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+    <curriculumcourse.curriculumcourse.Lecture>
+      <id>17</id>
+      <course reference="../../../courseList/curriculumcourse.curriculumcourse.Course[6]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </curriculumcourse.curriculumcourse.Lecture>
+  </lectureList>
+</curriculumcourse.curriculumcourse.CourseSchedule>
