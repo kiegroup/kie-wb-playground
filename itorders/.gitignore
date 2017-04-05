@@ -5,6 +5,7 @@ bin/
 # Eclipse, Netbeans and IntelliJ files
 /.*
 !.gitignore
+!.pom.xml
 /nbproject
 /*.ipr
 /*.iws
