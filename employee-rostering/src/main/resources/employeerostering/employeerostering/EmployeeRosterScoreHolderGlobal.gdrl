@@ -15,6 +15,4 @@
 
 package employeerostering.employeerostering;
 
-import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScoreHolder;
-
-global HardSoftScoreHolder scoreHolder;
+global org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScoreHolder scoreHolder;
