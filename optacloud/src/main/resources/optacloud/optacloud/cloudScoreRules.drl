@@ -16,12 +16,8 @@
 
 package optacloud.optacloud;
 
-import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScoreHolder;
-
 import optacloud.optacloud.Computer;
 import optacloud.optacloud.Process;
-
-global HardSoftScoreHolder scoreHolder;
 
 // ############################################################################
 // Hard constraints
