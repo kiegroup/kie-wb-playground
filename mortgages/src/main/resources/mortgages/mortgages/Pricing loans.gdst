@@ -17,11 +17,11 @@
   <tableName>Pricing loans</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>50</width>
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>-1</width>
+    <width>150</width>
   </descriptionCol>
   <metadataCols/>
   <attributeCols/>
@@ -33,19 +33,22 @@
       <conditions>
         <condition-column52>
           <typedDefaultValue>
+            <valueString></valueString>
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>96</width>
+          <width>100</width>
           <header>amount min</header>
           <constraintValueType>1</constraintValueType>
           <factField>amount</factField>
-          <fieldType>String</fieldType>
+          <fieldType>Integer</fieldType>
           <operator>&gt;</operator>
+          <parameters/>
         </condition-column52>
         <condition-column52>
           <typedDefaultValue>
+            <valueString></valueString>
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
@@ -54,37 +57,45 @@
           <header>amount max</header>
           <constraintValueType>1</constraintValueType>
           <factField>amount</factField>
-          <fieldType>String</fieldType>
+          <fieldType>Integer</fieldType>
           <operator>&lt;=</operator>
+          <parameters/>
         </condition-column52>
         <condition-column52>
           <typedDefaultValue>
+            <valueString></valueString>
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>81</width>
+          <width>100</width>
           <header>period</header>
           <constraintValueType>1</constraintValueType>
           <factField>lengthYears</factField>
-          <fieldType>String</fieldType>
+          <fieldType>Integer</fieldType>
           <operator>==</operator>
           <valueList>20, 25, 30</valueList>
+          <parameters/>
         </condition-column52>
         <condition-column52>
           <typedDefaultValue>
+            <valueString></valueString>
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>deposit max</header>
           <constraintValueType>1</constraintValueType>
           <factField>deposit</factField>
-          <fieldType>String</fieldType>
+          <fieldType>Integer</fieldType>
           <operator>&lt;</operator>
+          <parameters/>
         </condition-column52>
       </conditions>
+      <window>
+        <parameters/>
+      </window>
     </Pattern52>
     <Pattern52>
       <factType>IncomeSource</factType>
@@ -93,29 +104,35 @@
       <conditions>
         <condition-column52>
           <typedDefaultValue>
+            <valueString></valueString>
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>-1</width>
+          <width>100</width>
           <header>income</header>
           <constraintValueType>1</constraintValueType>
           <factField>type</factField>
           <fieldType>String</fieldType>
           <operator>==</operator>
           <valueList>Job, Asset</valueList>
+          <parameters/>
         </condition-column52>
       </conditions>
+      <window>
+        <parameters/>
+      </window>
     </Pattern52>
   </conditionPatterns>
   <actionCols>
     <set-field-col52>
       <typedDefaultValue>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>100</width>
       <header>Loan approved</header>
       <boundName>application</boundName>
       <factField>approved</factField>
@@ -125,11 +142,12 @@
     </set-field-col52>
     <set-field-col52>
       <typedDefaultValue>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>100</width>
       <header>LMI</header>
       <boundName>application</boundName>
       <factField>insuranceCost</factField>
@@ -138,11 +156,12 @@
     </set-field-col52>
     <set-field-col52>
       <typedDefaultValue>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>100</width>
       <header>rate</header>
       <boundName>application</boundName>
       <factField>approvedRate</factField>
@@ -150,30 +169,62 @@
       <update>false</update>
     </set-field-col52>
   </actionCols>
+  <auditLog>
+    <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
+      <acceptedTypes>
+        <entry>
+          <string>INSERT_ROW</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>INSERT_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>DELETE_ROW</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>DELETE_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>UPDATE_COLUMN</string>
+          <boolean>false</boolean>
+        </entry>
+      </acceptedTypes>
+    </filter>
+    <entries/>
+  </auditLog>
   <imports>
     <imports/>
   </imports>
   <packageName>mortgages.mortgages</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
+  <hitPolicy>NONE</hitPolicy>
   <data>
     <list>
       <value>
-        <valueNumeric class="int">3</valueNumeric>
+        <valueNumeric class="int">1</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>131000</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="int">131000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>200000</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="int">200000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -182,8 +233,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>20000</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="int">20000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -197,85 +249,40 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>2</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">1</valueNumeric>
+        <valueNumeric class="int">0</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>10000</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>100000</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>20</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>2000</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Job</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>true</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>0</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>4</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
     <list>
       <value>
         <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100001</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="int">10000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>130000</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="int">100000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -284,8 +291,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3000</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="int">2000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -299,13 +307,73 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>10</valueString>
+        <valueNumeric class="int">0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">4</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">3</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6</valueString>
+        <valueNumeric class="int">100001</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">130000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>20</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">3000</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Job</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">10</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">6</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
