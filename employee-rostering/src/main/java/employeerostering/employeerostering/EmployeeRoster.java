@@ -16,11 +16,12 @@
 
 package employeerostering.employeerostering;
 
-import org.optaplanner.core.impl.domain.solution.AbstractSolution;
 import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
 
-@org.optaplanner.core.api.domain.solution.PlanningSolution
-public class EmployeeRoster extends AbstractSolution<HardSoftScore> implements java.io.Serializable {
+@org.optaplanner.core.api.domain.solution.PlanningSolution(autoDiscoverMemberType = org.optaplanner.core.api.domain.autodiscover.AutoDiscoverMemberType.FIELD)
+@javax.xml.bind.annotation.XmlRootElement
+@javax.xml.bind.annotation.XmlAccessorType(javax.xml.bind.annotation.XmlAccessType.FIELD)
+public class EmployeeRoster implements java.io.Serializable {
 
     static final long serialVersionUID = 1L;
 
@@ -33,6 +34,12 @@ public class EmployeeRoster extends AbstractSolution<HardSoftScore> implements j
     @org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty
     private java.util.List<employeerostering.employeerostering.ShiftAssignment> shiftAssignmentList;
 
+    @org.kie.api.definition.type.Label("Generated Planner score field")
+    @javax.annotation.Generated({"org.optaplanner.workbench.screens.domaineditor.client.widgets.planner.PlannerDataObjectEditor"})
+    @org.optaplanner.core.api.domain.solution.PlanningScore
+    @javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(org.optaplanner.persistence.jaxb.api.score.buildin.hardsoft.HardSoftScoreJaxbXmlAdapter.class)
+    private org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore score;
+
     public EmployeeRoster() {
     }
 
@@ -41,7 +48,7 @@ public class EmployeeRoster extends AbstractSolution<HardSoftScore> implements j
     }
 
     public void setEmployeeList(
-            java.util.List<employeerostering.employeerostering.Employee> employeeList ) {
+            java.util.List<employeerostering.employeerostering.Employee> employeeList) {
         this.employeeList = employeeList;
     }
 
@@ -50,7 +57,7 @@ public class EmployeeRoster extends AbstractSolution<HardSoftScore> implements j
     }
 
     public void setShiftList(
-            java.util.List<employeerostering.employeerostering.Shift> shiftList ) {
+            java.util.List<employeerostering.employeerostering.Shift> shiftList) {
         this.shiftList = shiftList;
     }
 
@@ -59,7 +66,7 @@ public class EmployeeRoster extends AbstractSolution<HardSoftScore> implements j
     }
 
     public void setSkillList(
-            java.util.List<employeerostering.employeerostering.Skill> skillList ) {
+            java.util.List<employeerostering.employeerostering.Skill> skillList) {
         this.skillList = skillList;
     }
 
@@ -68,7 +75,7 @@ public class EmployeeRoster extends AbstractSolution<HardSoftScore> implements j
     }
 
     public void setTimeslotList(
-            java.util.List<employeerostering.employeerostering.Timeslot> timeslotList ) {
+            java.util.List<employeerostering.employeerostering.Timeslot> timeslotList) {
         this.timeslotList = timeslotList;
     }
 
@@ -77,7 +84,7 @@ public class EmployeeRoster extends AbstractSolution<HardSoftScore> implements j
     }
 
     public void setShiftAssignmentList(
-            java.util.List<employeerostering.employeerostering.ShiftAssignment> shiftAssignmentList ) {
+            java.util.List<employeerostering.employeerostering.ShiftAssignment> shiftAssignmentList) {
         this.shiftAssignmentList = shiftAssignmentList;
     }
 
@@ -86,8 +93,17 @@ public class EmployeeRoster extends AbstractSolution<HardSoftScore> implements j
     }
 
     public void setDayOffRequestList(
-            java.util.List<employeerostering.employeerostering.DayOffRequest> dayOffRequestList ) {
+            java.util.List<employeerostering.employeerostering.DayOffRequest> dayOffRequestList) {
         this.dayOffRequestList = dayOffRequestList;
+    }
+
+    public HardSoftScore getScore() {
+        return score;
+    }
+
+    public void setScore(
+            org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore score) {
+        this.score = score;
     }
 
     public EmployeeRoster(
@@ -96,13 +112,15 @@ public class EmployeeRoster extends AbstractSolution<HardSoftScore> implements j
             java.util.List<employeerostering.employeerostering.Skill> skillList,
             java.util.List<employeerostering.employeerostering.Timeslot> timeslotList,
             java.util.List<employeerostering.employeerostering.DayOffRequest> dayOffRequestList,
-            java.util.List<employeerostering.employeerostering.ShiftAssignment> shiftAssignmentList ) {
+            java.util.List<employeerostering.employeerostering.ShiftAssignment> shiftAssignmentList,
+            org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore score) {
         this.employeeList = employeeList;
         this.shiftList = shiftList;
         this.skillList = skillList;
         this.timeslotList = timeslotList;
         this.dayOffRequestList = dayOffRequestList;
         this.shiftAssignmentList = shiftAssignmentList;
+        this.score = score;
     }
 
 }
