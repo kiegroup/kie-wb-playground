@@ -27,7 +27,6 @@ public class CloudSolution implements java.io.Serializable {
     @org.optaplanner.core.api.domain.valuerange.ValueRangeProvider(id = "computerRange")
     private java.util.List<optacloud.optacloud.Computer> computerList;
     @org.kie.api.definition.type.Label("Process list")
-    @org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty
     private java.util.List<optacloud.optacloud.Process> processList;
 
     @org.kie.api.definition.type.Label("Generated Planner score field")

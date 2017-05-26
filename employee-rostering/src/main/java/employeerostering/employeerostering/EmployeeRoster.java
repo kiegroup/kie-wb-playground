@@ -31,7 +31,6 @@ public class EmployeeRoster implements java.io.Serializable {
     private java.util.List<employeerostering.employeerostering.Skill> skillList;
     private java.util.List<employeerostering.employeerostering.Timeslot> timeslotList;
     private java.util.List<employeerostering.employeerostering.DayOffRequest> dayOffRequestList;
-    @org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty
     private java.util.List<employeerostering.employeerostering.ShiftAssignment> shiftAssignmentList;
 
     @org.kie.api.definition.type.Label("Generated Planner score field")
