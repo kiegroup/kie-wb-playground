@@ -37,7 +37,6 @@ public class CourseSchedule implements java.io.Serializable {
     private java.util.List<Period> periodList;
     @org.optaplanner.core.api.domain.valuerange.ValueRangeProvider(id = "roomRange")
     private java.util.List<Room> roomList;
-    @org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty
     private java.util.List<Lecture> lectureList;
 
     private java.lang.Long id;
