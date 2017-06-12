@@ -30,6 +30,7 @@
       </includes>
       <directory>target/kie-wb-playground-xslt</directory>
       <outputDirectory>/</outputDirectory>
+      <filtered>true</filtered>
     </fileSet>
     <fileSet>
       <useDefaultExcludes>false</useDefaultExcludes>
@@ -49,11 +50,4 @@
       </excludes>
     </fileSet>
   </fileSets>
-  <files>
-    <file>
-      <source>${project.build.directory}/kie-wb-playground-xslt/itorders/pom.xml</source>
-      <outputDirectory>/itorders</outputDirectory>
-      <filtered>true</filtered>
-    </file>
-  </files>
 </assembly>
