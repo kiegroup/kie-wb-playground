@@ -36,6 +36,7 @@
       <useDefaultExcludes>false</useDefaultExcludes>
       <includes>
         <include>curriculumcourse/**</include>
+        <include>dinnerparty/**</include>
         <include>employee-rostering/**</include>
         <include>evaluation/**</include>
         <include>mortgages/**</include>
