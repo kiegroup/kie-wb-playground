@@ -1,0 +1,314 @@
+<dinnerparty.dinnerparty.DinnerParty>
+  <jobList>
+    <dinnerparty.dinnerparty.Job>
+      <type>
+        <value>Politician</value>
+        <id>0</id>
+      </type>
+      <name>Democrat</name>
+      <id>0</id>
+    </dinnerparty.dinnerparty.Job>
+    <dinnerparty.dinnerparty.Job>
+      <type reference="../../dinnerparty.dinnerparty.Job/type"/>
+      <name>Republican</name>
+      <id>1</id>
+    </dinnerparty.dinnerparty.Job>
+    <dinnerparty.dinnerparty.Job>
+      <type reference="../../dinnerparty.dinnerparty.Job/type"/>
+      <name>Neutral</name>
+      <id>2</id>
+    </dinnerparty.dinnerparty.Job>
+    <dinnerparty.dinnerparty.Job>
+      <type>
+        <value>Doctor</value>
+        <id>1</id>
+      </type>
+      <name>Surgeon</name>
+      <id>3</id>
+    </dinnerparty.dinnerparty.Job>
+    <dinnerparty.dinnerparty.Job>
+      <type>
+        <value>Teacher</value>
+        <id>2</id>
+      </type>
+      <name>French</name>
+      <id>4</id>
+    </dinnerparty.dinnerparty.Job>
+    <dinnerparty.dinnerparty.Job>
+      <type reference="../../dinnerparty.dinnerparty.Job[5]/type"/>
+      <name>Physicist</name>
+      <id>5</id>
+    </dinnerparty.dinnerparty.Job>
+    <dinnerparty.dinnerparty.Job>
+      <type reference="../../dinnerparty.dinnerparty.Job[5]/type"/>
+      <name>Mathematician</name>
+      <id>6</id>
+    </dinnerparty.dinnerparty.Job>
+    <dinnerparty.dinnerparty.Job>
+      <type>
+        <value>Developer</value>
+        <id>3</id>
+      </type>
+      <name>WebDeveloper</name>
+      <id>7</id>
+    </dinnerparty.dinnerparty.Job>
+    <dinnerparty.dinnerparty.Job>
+      <type reference="../../dinnerparty.dinnerparty.Job[8]/type"/>
+      <name>JavaDeveloper</name>
+      <id>8</id>
+    </dinnerparty.dinnerparty.Job>
+    <dinnerparty.dinnerparty.Job>
+      <type reference="../../dinnerparty.dinnerparty.Job[8]/type"/>
+      <name>RubyDeveloper</name>
+      <id>9</id>
+    </dinnerparty.dinnerparty.Job>
+  </jobList>
+  <guestList>
+    <dinnerparty.dinnerparty.Guest>
+      <name>Matthew</name>
+      <job reference="../../../jobList/dinnerparty.dinnerparty.Job"/>
+      <gender>M</gender>
+      <id>0</id>
+    </dinnerparty.dinnerparty.Guest>
+    <dinnerparty.dinnerparty.Guest>
+      <name>Ellie</name>
+      <job reference="../../../jobList/dinnerparty.dinnerparty.Job[4]"/>
+      <gender>F</gender>
+      <id>1</id>
+    </dinnerparty.dinnerparty.Guest>
+    <dinnerparty.dinnerparty.Guest>
+      <name>Eva</name>
+      <job reference="../../../jobList/dinnerparty.dinnerparty.Job[8]"/>
+      <gender>F</gender>
+      <id>2</id>
+    </dinnerparty.dinnerparty.Guest>
+    <dinnerparty.dinnerparty.Guest>
+      <name>Peter</name>
+      <job reference="../../../jobList/dinnerparty.dinnerparty.Job[9]"/>
+      <gender>M</gender>
+      <id>3</id>
+    </dinnerparty.dinnerparty.Guest>
+    <dinnerparty.dinnerparty.Guest>
+      <name>Sophia</name>
+      <job reference="../../../jobList/dinnerparty.dinnerparty.Job[6]"/>
+      <gender>F</gender>
+      <id>4</id>
+    </dinnerparty.dinnerparty.Guest>
+    <dinnerparty.dinnerparty.Guest>
+      <name>John</name>
+      <job reference="../../../jobList/dinnerparty.dinnerparty.Job[2]"/>
+      <gender>M</gender>
+      <id>5</id>
+    </dinnerparty.dinnerparty.Guest>
+    <dinnerparty.dinnerparty.Guest>
+      <name>Isabela</name>
+      <job reference="../../../jobList/dinnerparty.dinnerparty.Job[4]"/>
+      <gender>F</gender>
+      <id>6</id>
+    </dinnerparty.dinnerparty.Guest>
+    <dinnerparty.dinnerparty.Guest>
+      <name>Igor</name>
+      <job reference="../../../jobList/dinnerparty.dinnerparty.Job[5]"/>
+      <gender>M</gender>
+      <id>7</id>
+    </dinnerparty.dinnerparty.Guest>
+    <dinnerparty.dinnerparty.Guest>
+      <name>Joe</name>
+      <job reference="../../../jobList/dinnerparty.dinnerparty.Job[4]"/>
+      <gender>M</gender>
+      <id>8</id>
+    </dinnerparty.dinnerparty.Guest>
+    <dinnerparty.dinnerparty.Guest>
+      <name>Susanne</name>
+      <job reference="../../../jobList/dinnerparty.dinnerparty.Job[10]"/>
+      <gender>F</gender>
+      <id>9</id>
+    </dinnerparty.dinnerparty.Guest>
+    <dinnerparty.dinnerparty.Guest>
+      <name>Ingrid</name>
+      <job reference="../../../jobList/dinnerparty.dinnerparty.Job[3]"/>
+      <gender>F</gender>
+      <id>10</id>
+    </dinnerparty.dinnerparty.Guest>
+    <dinnerparty.dinnerparty.Guest>
+      <name>Mark</name>
+      <job reference="../../../jobList/dinnerparty.dinnerparty.Job[7]"/>
+      <gender>M</gender>
+      <id>11</id>
+    </dinnerparty.dinnerparty.Guest>
+  </guestList>
+  <tableList>
+    <dinnerparty.dinnerparty.Table>
+      <seatList>
+        <dinnerparty.dinnerparty.Seat>
+          <table reference="../../.."/>
+          <seatIndexInTable>0</seatIndexInTable>
+          <leftSeat>
+            <table reference="../../../.."/>
+            <seatIndexInTable>3</seatIndexInTable>
+            <leftSeat>
+              <table reference="../../../../.."/>
+              <seatIndexInTable>2</seatIndexInTable>
+              <leftSeat>
+                <table reference="../../../../../.."/>
+                <seatIndexInTable>1</seatIndexInTable>
+                <leftSeat reference="../../../.."/>
+                <rightSeat reference="../.."/>
+                <id>1</id>
+              </leftSeat>
+              <rightSeat reference="../.."/>
+              <id>2</id>
+            </leftSeat>
+            <rightSeat reference="../.."/>
+            <id>3</id>
+          </leftSeat>
+          <rightSeat reference="../leftSeat/leftSeat/leftSeat"/>
+          <id>0</id>
+        </dinnerparty.dinnerparty.Seat>
+        <dinnerparty.dinnerparty.Seat reference="../dinnerparty.dinnerparty.Seat/leftSeat/leftSeat/leftSeat"/>
+        <dinnerparty.dinnerparty.Seat reference="../dinnerparty.dinnerparty.Seat/leftSeat/leftSeat"/>
+        <dinnerparty.dinnerparty.Seat reference="../dinnerparty.dinnerparty.Seat/leftSeat"/>
+      </seatList>
+      <id>0</id>
+    </dinnerparty.dinnerparty.Table>
+    <dinnerparty.dinnerparty.Table>
+      <seatList>
+        <dinnerparty.dinnerparty.Seat>
+          <table reference="../../.."/>
+          <seatIndexInTable>0</seatIndexInTable>
+          <leftSeat>
+            <table reference="../../../.."/>
+            <seatIndexInTable>3</seatIndexInTable>
+            <leftSeat>
+              <table reference="../../../../.."/>
+              <seatIndexInTable>2</seatIndexInTable>
+              <leftSeat>
+                <table reference="../../../../../.."/>
+                <seatIndexInTable>1</seatIndexInTable>
+                <leftSeat reference="../../../.."/>
+                <rightSeat reference="../.."/>
+                <id>5</id>
+              </leftSeat>
+              <rightSeat reference="../.."/>
+              <id>6</id>
+            </leftSeat>
+            <rightSeat reference="../.."/>
+            <id>7</id>
+          </leftSeat>
+          <rightSeat reference="../leftSeat/leftSeat/leftSeat"/>
+          <id>4</id>
+        </dinnerparty.dinnerparty.Seat>
+        <dinnerparty.dinnerparty.Seat reference="../dinnerparty.dinnerparty.Seat/leftSeat/leftSeat/leftSeat"/>
+        <dinnerparty.dinnerparty.Seat reference="../dinnerparty.dinnerparty.Seat/leftSeat/leftSeat"/>
+        <dinnerparty.dinnerparty.Seat reference="../dinnerparty.dinnerparty.Seat/leftSeat"/>
+      </seatList>
+      <id>1</id>
+    </dinnerparty.dinnerparty.Table>
+    <dinnerparty.dinnerparty.Table>
+      <seatList>
+        <dinnerparty.dinnerparty.Seat>
+          <table reference="../../.."/>
+          <seatIndexInTable>0</seatIndexInTable>
+          <leftSeat>
+            <table reference="../../../.."/>
+            <seatIndexInTable>3</seatIndexInTable>
+            <leftSeat>
+              <table reference="../../../../.."/>
+              <seatIndexInTable>2</seatIndexInTable>
+              <leftSeat>
+                <table reference="../../../../../.."/>
+                <seatIndexInTable>1</seatIndexInTable>
+                <leftSeat reference="../../../.."/>
+                <rightSeat reference="../.."/>
+                <id>9</id>
+              </leftSeat>
+              <rightSeat reference="../.."/>
+              <id>10</id>
+            </leftSeat>
+            <rightSeat reference="../.."/>
+            <id>11</id>
+          </leftSeat>
+          <rightSeat reference="../leftSeat/leftSeat/leftSeat"/>
+          <id>8</id>
+        </dinnerparty.dinnerparty.Seat>
+        <dinnerparty.dinnerparty.Seat reference="../dinnerparty.dinnerparty.Seat/leftSeat/leftSeat/leftSeat"/>
+        <dinnerparty.dinnerparty.Seat reference="../dinnerparty.dinnerparty.Seat/leftSeat/leftSeat"/>
+        <dinnerparty.dinnerparty.Seat reference="../dinnerparty.dinnerparty.Seat/leftSeat"/>
+      </seatList>
+      <id>2</id>
+    </dinnerparty.dinnerparty.Table>
+  </tableList>
+  <seatList>
+    <dinnerparty.dinnerparty.Seat reference="../../tableList/dinnerparty.dinnerparty.Table/seatList/dinnerparty.dinnerparty.Seat"/>
+    <dinnerparty.dinnerparty.Seat reference="../../tableList/dinnerparty.dinnerparty.Table/seatList/dinnerparty.dinnerparty.Seat/leftSeat/leftSeat/leftSeat"/>
+    <dinnerparty.dinnerparty.Seat reference="../../tableList/dinnerparty.dinnerparty.Table/seatList/dinnerparty.dinnerparty.Seat/leftSeat/leftSeat"/>
+    <dinnerparty.dinnerparty.Seat reference="../../tableList/dinnerparty.dinnerparty.Table/seatList/dinnerparty.dinnerparty.Seat/leftSeat"/>
+    <dinnerparty.dinnerparty.Seat reference="../../tableList/dinnerparty.dinnerparty.Table[2]/seatList/dinnerparty.dinnerparty.Seat"/>
+    <dinnerparty.dinnerparty.Seat reference="../../tableList/dinnerparty.dinnerparty.Table[2]/seatList/dinnerparty.dinnerparty.Seat/leftSeat/leftSeat/leftSeat"/>
+    <dinnerparty.dinnerparty.Seat reference="../../tableList/dinnerparty.dinnerparty.Table[2]/seatList/dinnerparty.dinnerparty.Seat/leftSeat/leftSeat"/>
+    <dinnerparty.dinnerparty.Seat reference="../../tableList/dinnerparty.dinnerparty.Table[2]/seatList/dinnerparty.dinnerparty.Seat/leftSeat"/>
+    <dinnerparty.dinnerparty.Seat reference="../../tableList/dinnerparty.dinnerparty.Table[3]/seatList/dinnerparty.dinnerparty.Seat"/>
+    <dinnerparty.dinnerparty.Seat reference="../../tableList/dinnerparty.dinnerparty.Table[3]/seatList/dinnerparty.dinnerparty.Seat/leftSeat/leftSeat/leftSeat"/>
+    <dinnerparty.dinnerparty.Seat reference="../../tableList/dinnerparty.dinnerparty.Table[3]/seatList/dinnerparty.dinnerparty.Seat/leftSeat/leftSeat"/>
+    <dinnerparty.dinnerparty.Seat reference="../../tableList/dinnerparty.dinnerparty.Table[3]/seatList/dinnerparty.dinnerparty.Seat/leftSeat"/>
+  </seatList>
+  <seatDesignationList>
+    <dinnerparty.dinnerparty.SeatDesignation>
+      <guest reference="../../../guestList/dinnerparty.dinnerparty.Guest"/>
+      <id>0</id>
+    </dinnerparty.dinnerparty.SeatDesignation>
+    <dinnerparty.dinnerparty.SeatDesignation>
+      <guest reference="../../../guestList/dinnerparty.dinnerparty.Guest[2]"/>
+      <id>1</id>
+    </dinnerparty.dinnerparty.SeatDesignation>
+    <dinnerparty.dinnerparty.SeatDesignation>
+      <guest reference="../../../guestList/dinnerparty.dinnerparty.Guest[3]"/>
+      <id>2</id>
+    </dinnerparty.dinnerparty.SeatDesignation>
+    <dinnerparty.dinnerparty.SeatDesignation>
+      <guest reference="../../../guestList/dinnerparty.dinnerparty.Guest[4]"/>
+      <id>3</id>
+    </dinnerparty.dinnerparty.SeatDesignation>
+    <dinnerparty.dinnerparty.SeatDesignation>
+      <guest reference="../../../guestList/dinnerparty.dinnerparty.Guest[5]"/>
+      <id>4</id>
+    </dinnerparty.dinnerparty.SeatDesignation>
+    <dinnerparty.dinnerparty.SeatDesignation>
+      <guest reference="../../../guestList/dinnerparty.dinnerparty.Guest[6]"/>
+      <id>5</id>
+    </dinnerparty.dinnerparty.SeatDesignation>
+    <dinnerparty.dinnerparty.SeatDesignation>
+      <guest reference="../../../guestList/dinnerparty.dinnerparty.Guest[7]"/>
+      <id>6</id>
+    </dinnerparty.dinnerparty.SeatDesignation>
+    <dinnerparty.dinnerparty.SeatDesignation>
+      <guest reference="../../../guestList/dinnerparty.dinnerparty.Guest[8]"/>
+      <id>7</id>
+    </dinnerparty.dinnerparty.SeatDesignation>
+    <dinnerparty.dinnerparty.SeatDesignation>
+      <guest reference="../../../guestList/dinnerparty.dinnerparty.Guest[9]"/>
+      <id>8</id>
+    </dinnerparty.dinnerparty.SeatDesignation>
+    <dinnerparty.dinnerparty.SeatDesignation>
+      <guest reference="../../../guestList/dinnerparty.dinnerparty.Guest[10]"/>
+      <id>9</id>
+    </dinnerparty.dinnerparty.SeatDesignation>
+    <dinnerparty.dinnerparty.SeatDesignation>
+      <guest reference="../../../guestList/dinnerparty.dinnerparty.Guest[11]"/>
+      <id>10</id>
+    </dinnerparty.dinnerparty.SeatDesignation>
+    <dinnerparty.dinnerparty.SeatDesignation>
+      <guest reference="../../../guestList/dinnerparty.dinnerparty.Guest[12]"/>
+      <id>11</id>
+    </dinnerparty.dinnerparty.SeatDesignation>
+  </seatDesignationList>
+  <id>0</id>
+  <jobTypeList class="java.util.Arrays$ArrayList">
+    <a class="dinnerparty.dinnerparty.JobType-array">
+      <dinnerparty.dinnerparty.JobType reference="../../../jobList/dinnerparty.dinnerparty.Job/type"/>
+      <dinnerparty.dinnerparty.JobType reference="../../../jobList/dinnerparty.dinnerparty.Job[4]/type"/>
+      <dinnerparty.dinnerparty.JobType reference="../../../jobList/dinnerparty.dinnerparty.Job[5]/type"/>
+      <dinnerparty.dinnerparty.JobType reference="../../../jobList/dinnerparty.dinnerparty.Job[8]/type"/>
+    </a>
+  </jobTypeList>
+</dinnerparty.dinnerparty.DinnerParty>

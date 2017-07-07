@@ -1,0 +1,48 @@
+/*
+ * Copyright 2017 Red Hat, Inc. and/or its affiliates.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+*/
+
+package dinnerparty.dinnerparty;
+
+import dinnerparty.dinnerparty.JobType;
+import dinnerparty.dinnerparty.SeatDesignation;
+import dinnerparty.dinnerparty.Table;
+
+rule "alternateGenderWithinTable"
+    when
+        SeatDesignation($leftId : id, $leftSeat : seat, $leftGender : guest.gender)
+        SeatDesignation(id != $leftId, seat != null, seat.rightSeat == $leftSeat, guest.gender == $leftGender)
+    then
+        scoreHolder.addConstraintMatch(kcontext, -100);
+end
+
+// 1 democrat and 1 republican = 2 politians at each table but NOT two of the same kind
+// 2 doctors at each table but NOT two of the same kind
+// 2 coaches at each table but NOT two of the same kind
+// 2 programmers at each table but NOT two of the same kind
+rule "twoSameJobTypePerTable"
+   when
+       SeatDesignation($leftId : id, $leftJob : guest.job, seat != null, $leftTable : seat.table)
+       SeatDesignation(id > $leftId, seat != null, seat.table == $leftTable, guest.job.type == $leftJob.type, guest.job.name == $leftJob.name )
+   then
+       scoreHolder.addConstraintMatch(kcontext, -100);
+end
+
+rule "noSharedSeats"
+   when
+       SeatDesignation($leftId : id, $leftSeat : seat != null)
+       SeatDesignation(id > $leftId, seat != null, seat == $leftSeat)
+   then
+       scoreHolder.addConstraintMatch(kcontext, -100);
+end
