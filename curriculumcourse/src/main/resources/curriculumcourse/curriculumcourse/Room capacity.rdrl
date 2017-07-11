@@ -17,7 +17,7 @@ package curriculumcourse.curriculumcourse;
 
 import java.lang.Number;
 
-rule "RoomCapacity"
+rule "Room capacity"
 	dialect "mvel"
 	when
 		$room : Room( )
