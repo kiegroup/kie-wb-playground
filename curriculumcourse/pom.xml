@@ -35,7 +35,7 @@
   <artifactId>curriculumcourse</artifactId>
   <packaging>kjar</packaging>
   <name>Course Scheduling Example</name>
-  <description>This example represents a timetabling problem, where university lectures are scheduled.</description>
+  <description>University course scheduling using Planner. Assigns lectures to rooms.</description>
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>

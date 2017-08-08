@@ -34,6 +34,7 @@
   </parent>
   <artifactId>mortgages</artifactId>
   <packaging>kjar</packaging>
+  <description>Loan approval process automation using Drools.</description>
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
