@@ -35,8 +35,7 @@
   <artifactId>dinnerparty</artifactId>
   <packaging>kjar</packaging>
   <name>Dinner party</name>
-  <description>This workbench example assigns guests to tables. It leverages combination of
-    Guided Decision Tables and DRL-based rules to define scoring function.</description>
+  <description>Guest seating optimisation using Planner. Leverages Guided Decision Tables to define scoring function.</description>
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>

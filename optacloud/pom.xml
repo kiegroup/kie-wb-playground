@@ -35,7 +35,7 @@
   <artifactId>optacloud</artifactId>
   <packaging>kjar</packaging>
   <name>optacloud</name>
-  <description>This workbench example assigns processes to computers.</description>
+  <description>Resource allocation optimisation using Planner. Assigns processes to computers with limited resources.</description>
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
