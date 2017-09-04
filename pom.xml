@@ -109,6 +109,18 @@
           </execution>
         </executions>
       </plugin>
+      <!-- Disable managed dependencies check as submodules need to declare their versions explicitly due to
+           version replacement in resulting pom files -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>no-managed-deps</id>
+            <phase>none</phase>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 

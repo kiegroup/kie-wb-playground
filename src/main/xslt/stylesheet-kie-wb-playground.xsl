@@ -34,7 +34,6 @@
 
   <!-- Remove parent & dependencies declarations -->
   <xsl:template match="m:parent"/>
-  <xsl:template match="m:dependencies"/>
   <xsl:template match="comment()[contains(., 'The file is modified by XSL transformation before kie-wb-playground.zip file is created.')]"/>
 
   <!-- Set version to 1.0.0-SNAPSHOT -->
