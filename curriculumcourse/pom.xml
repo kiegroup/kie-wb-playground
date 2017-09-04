@@ -20,7 +20,6 @@
   ~
   ~ The following modifications are applied:
   ~ * Remove <parent> element
-  ~ * Remove <dependencies> element
   ~ * Add <groupId> element corresponding to current value of <artifactId> element
   ~ * Add <version> element with value 1.0.0-SNAPSHOT
   -->
@@ -36,26 +35,39 @@
   <packaging>kjar</packaging>
   <name>Course Scheduling Example</name>
   <description>University course scheduling using Planner. Assigns lectures to rooms.</description>
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-api</artifactId>
-      <scope>provided</scope>
+      <version>${version.org.kie}</version>
     </dependency>
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-core</artifactId>
-      <scope>provided</scope>
+      <version>${version.org.optaplanner}</version>
     </dependency>
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-persistence-jaxb</artifactId>
-      <scope>provided</scope>
+      <version>${version.org.optaplanner}</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${version.junit}</version>
     </dependency>
   </dependencies>
-
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${version.compiler.plugin}</version>
+      </plugin>
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
@@ -64,4 +76,20 @@
       </plugin>
     </plugins>
   </build>
+  <repositories>
+    <repository>
+      <id>jboss-public-repository-group</id>
+      <name>JBoss Public Repository Group</name>
+      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>daily</updatePolicy>
+      </snapshots>
+    </repository>
+  </repositories>
 </project>
