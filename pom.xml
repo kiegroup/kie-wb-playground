@@ -41,76 +41,9 @@
     <module>optacloud</module>
     <module>mortgages</module>
     <module>itorders</module>
+    <module>kie-all-playground</module>
+    <module>kie-decision-playground</module>
   </modules>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>xml-maven-plugin</artifactId>
-        <inherited>false</inherited>
-        <executions>
-          <execution>
-            <goals>
-              <goal>transform</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <transformationSets>
-            <transformationSet>
-              <dir>${project.basedir}</dir>
-              <includes>
-                <include>*/pom.xml</include>
-              </includes>
-              <stylesheet>src/main/xslt/stylesheet-kie-wb-playground.xsl</stylesheet>
-              <outputDir>${project.build.directory}/kie-wb-playground-xslt</outputDir>
-            </transformationSet>
-          </transformationSets>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-assembly-plugin</artifactId>
-        <inherited>false</inherited>
-        <executions>
-          <execution>
-            <id>create-zip</id>
-            <phase>package</phase>
-            <goals>
-              <goal>single</goal>
-            </goals>
-            <configuration>
-              <finalName>kie-wb-playground</finalName>
-              <descriptors>
-                <descriptor>src/main/assembly/assembly-zip-kie-wb-playground.xml</descriptor>
-              </descriptors>
-              <archive>
-                <addMavenDescriptor>false</addMavenDescriptor>
-              </archive>
-              <appendAssemblyId>false</appendAssemblyId>
-            </configuration>
-          </execution>
-          <execution>
-            <id>create-jar</id>
-            <phase>package</phase>
-            <goals>
-              <goal>single</goal>
-            </goals>
-            <configuration>
-              <descriptors>
-                <descriptor>src/main/assembly/assembly-jar-kie-wb-playground.xml</descriptor>
-              </descriptors>
-              <archive>
-                <addMavenDescriptor>false</addMavenDescriptor>
-              </archive>
-              <appendAssemblyId>false</appendAssemblyId>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
 
   <dependencyManagement>
     <dependencies>
