@@ -19,36 +19,13 @@
   <id>project</id>
   <includeBaseDirectory>false</includeBaseDirectory>
   <formats>
-    <format>zip</format>
+    <format>jar</format>
   </formats>
-  <fileSets>
-
-    <fileSet>
-      <useDefaultExcludes>false</useDefaultExcludes>
-      <includes>
-        <include>*/pom.xml</include>
-      </includes>
-      <directory>target/kie-wb-playground-xslt</directory>
-      <outputDirectory>/</outputDirectory>
-      <filtered>true</filtered>
-    </fileSet>
-    <fileSet>
-      <useDefaultExcludes>false</useDefaultExcludes>
-      <includes>
-        <include>curriculumcourse/**</include>
-        <include>dinnerparty/**</include>
-        <include>employee-rostering/**</include>
-        <include>evaluation/**</include>
-        <include>mortgages/**</include>
-        <include>optacloud/**</include>
-        <include>itorders/**</include>
-      </includes>
-      <excludes>
-        <exclude>**/*.iml</exclude>
-        <exclude>*/.gitignore</exclude>
-        <exclude>*/target/**</exclude>
-        <exclude>*/pom.xml</exclude>
-      </excludes>
-    </fileSet>
-  </fileSets>
+  <files>
+    <file>
+      <source>target/kie-wb-playground.zip</source>
+      <outputDirectory>/org/kie/kie-wb-playground</outputDirectory>
+      <destName>kie-wb-playground.zip</destName>
+    </file>
+  </files>
 </assembly>
