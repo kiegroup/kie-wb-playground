@@ -34,7 +34,7 @@
   </parent>
   <artifactId>dinnerparty</artifactId>
   <packaging>kjar</packaging>
-  <name>Dinner party</name>
+  <name>Dinner Party</name>
   <description>Guest seating optimisation using Planner. Leverages Guided Decision Tables to define scoring function.</description>
   <dependencies>
     <dependency>
