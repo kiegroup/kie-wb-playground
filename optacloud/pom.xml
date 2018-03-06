@@ -34,7 +34,7 @@
   </parent>
   <artifactId>optacloud</artifactId>
   <packaging>kjar</packaging>
-  <name>optacloud</name>
+  <name>OptaCloud</name>
   <description>Resource allocation optimisation using Planner. Assigns processes to computers with limited resources.</description>
   <dependencies>
     <dependency>

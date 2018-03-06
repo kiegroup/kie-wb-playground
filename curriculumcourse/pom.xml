@@ -34,7 +34,7 @@
   </parent>
   <artifactId>curriculumcourse</artifactId>
   <packaging>kjar</packaging>
-  <name>Course Scheduling Example</name>
+  <name>Course Scheduling</name>
   <description>University course scheduling using Planner. Assigns lectures to rooms.</description>
   <dependencies>
     <dependency>
