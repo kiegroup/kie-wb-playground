@@ -45,6 +45,7 @@
         <include>mortgages/**</include>
         <include>optacloud/**</include>
         <include>itorders/**</include>
+        <include>getstarted-loan/**</include>
       </includes>
       <excludes>
         <exclude>**/*.iws</exclude>
