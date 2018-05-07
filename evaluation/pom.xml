@@ -34,7 +34,7 @@
   </parent>
   <artifactId>evaluation</artifactId>
   <packaging>kjar</packaging>
-  <name>Evaluation Process</name>
+  <name>Evaluation_Process</name>
   <description>Getting started Business Process for evaluating employees</description>
 
   <build>
