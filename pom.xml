@@ -43,7 +43,7 @@
     <module>itorders</module>
     <module>kie-all-playground</module>
     <module>kie-decision-playground</module>
-    <module>getstarted-loan</module>
+    <module>mortgage-process</module>
   </modules>
 
   <dependencyManagement>
