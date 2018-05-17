@@ -21,6 +21,9 @@
                 exclude-result-prefixes="m xalan"
                 version="1.0">
 
+
+  <xsl:variable name="dependencies" select="document('dependencies.xml')"/>
+
   <!-- Remove all whitespaces & format the output -->
   <xsl:strip-space elements="*"/>
   <xsl:output method="xml" indent="yes" xalan:indent-amount="2"/>
@@ -32,15 +35,31 @@
     </xsl:copy>
   </xsl:template>
 
-  <!-- Remove parent & dependencies declarations -->
+  <!-- Remove parent & and commets-->
   <xsl:template match="m:parent"/>
-  <xsl:template match="m:dependencies"/>
   <xsl:template match="comment()[contains(., 'The file is modified by XSL transformation before kie-wb-playground.zip file is created.')]"/>
+
+  <!-- Replace dependencies with mandatories -->
+
+  <xsl:template match="m:project[not(m:dependencies)]">
+    <xsl:copy>
+      <xsl:apply-templates select="node() | @*"/>
+      <xsl:copy-of select="$dependencies/dependencies"/>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match="m:dependencies">
+    <xsl:copy>
+      <xsl:copy-of select="$dependencies/dependencies/dependency"/>
+    </xsl:copy>
+  </xsl:template>
 
   <!-- Set version to 1.0.0-SNAPSHOT -->
   <xsl:template match="m:project/m:artifactId">
     <xsl:copy-of select="."/>
-    <groupId><xsl:value-of select="current()"/></groupId>
+    <groupId>
+      <xsl:value-of select="current()"/>
+    </groupId>
     <version>1.0.0-SNAPSHOT</version>
   </xsl:template>
 
