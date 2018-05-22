@@ -26,7 +26,7 @@
   </parent>
   <artifactId>mortgage-process</artifactId>
   <packaging>kjar</packaging>
-  <name>Mortgage_Process</name>
+  <name>Mortgage Process</name>
   <description>Getting started loan approval process in BPMN2, decision table, business rules, and forms.</description>
   <dependencies>
     <dependency>
