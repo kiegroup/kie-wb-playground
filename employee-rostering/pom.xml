@@ -34,7 +34,7 @@
   </parent>
   <artifactId>employeerostering</artifactId>
   <packaging>kjar</packaging>
-  <name>Employee Rostering</name>
+  <name>Employee_Rostering</name>
   <description>Employee rostering problem optimisation using Planner. Assigns employees to shifts based on their skill.</description>
   <dependencies>
     <dependency>
