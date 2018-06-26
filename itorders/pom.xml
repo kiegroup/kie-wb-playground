@@ -9,7 +9,7 @@
   </parent>
   <artifactId>itorders</artifactId>  
   <packaging>kjar</packaging>
-  <name>IT Orders</name>
+  <name>IT_Orders</name>
   <description>Case Management IT Orders project</description>
   <build>
     <plugins>
