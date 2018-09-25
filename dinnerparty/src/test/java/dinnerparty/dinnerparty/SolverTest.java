@@ -33,7 +33,7 @@ public class SolverTest {
         KieContainer kieContainer = KieServices.Factory.get().getKieClasspathContainer(SolverTest.class.getClassLoader());
         SolverFactory<DinnerParty> solverFactory =
                 SolverFactory.createFromKieContainerXmlResource(kieContainer,
-                                                                "dinnerparty/dinnerparty/testSolverConfig.xml");
+                                                                "dinnerparty/dinnerparty/testSolverConfig.solver.xml");
         Solver<DinnerParty> solver = solverFactory.buildSolver();
 
         solver.solve(getSolution());
