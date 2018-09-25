@@ -32,7 +32,7 @@ public class SolverTest {
         KieContainer kieContainer = KieServices.Factory.get().getKieClasspathContainer(SolverTest.class.getClassLoader());
         SolverFactory<CloudSolution> solverFactory =
                 SolverFactory.createFromKieContainerXmlResource(kieContainer,
-                                                                "optacloud/optacloud/testSolverConfig.xml");
+                                                                "optacloud/optacloud/testSolverConfig.solver.xml");
         Solver<CloudSolution> solver = solverFactory.buildSolver();
 
         solver.solve(getSolution());
