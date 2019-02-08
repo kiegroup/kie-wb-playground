@@ -44,6 +44,7 @@
     <module>kie-all-playground</module>
     <module>kie-decision-playground</module>
     <module>mortgage-process</module>
+    <module>traffic-violation</module>
   </modules>
 
   <dependencyManagement>
