@@ -44,6 +44,7 @@
     <module>kie-all-playground</module>
     <module>kie-decision-playground</module>
     <module>mortgage-process</module>
+    <module>traffic-violation</module>
   </modules>
 
   <dependencyManagement>
@@ -51,6 +52,13 @@
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-bom</artifactId>
+        <type>pom</type>
+        <version>${project.version}</version>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-dmn-bom</artifactId>
         <type>pom</type>
         <version>${project.version}</version>
         <scope>import</scope>
@@ -68,6 +76,16 @@
         <type>pom</type>
         <version>${project.version}</version>
         <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-api</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-backend</artifactId>
+        <version>${project.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
