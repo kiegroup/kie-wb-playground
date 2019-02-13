@@ -3,17 +3,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>kie-staging-repository-group</id>
-        <url>https://repository.jboss.org/nexus/content/groups/kie-group</url>
+        <id>opendaylight-snapshot</id>
+        <url>http://nexus.opendaylight.org/content/repositories/opendaylight.snapshot/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-public-repository-group</id>
-        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-        <source>SETTINGS</source>
+        <id>local</id>
+        <url>/Users/etirelli/.m2/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
     <repository>
@@ -27,17 +27,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>opendaylight-snapshot</id>
-        <url>http://nexus.opendaylight.org/content/repositories/opendaylight.snapshot/</url>
+        <id>kie-staging-repository-group</id>
+        <url>https://repository.jboss.org/nexus/content/groups/kie-group</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>local</id>
-        <url>/Users/etirelli/.m2/repository</url>
-        <source>LOCAL</source>
+        <id>jboss-public-repository-group</id>
+        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>

@@ -1,4 +1,4 @@
-package org.kie.examples;
+package org.kie.example.traffic;
 /**
 * Do not remove this file
 */
