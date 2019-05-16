@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.kie.workbench.playground</groupId>
     <artifactId>playground-parent</artifactId>
-    <version>7.19.0-SNAPSHOT</version>
+    <version>7.22.0-SNAPSHOT</version>
   </parent>
   <artifactId>traffic-violation</artifactId>
   <packaging>kjar</packaging>
@@ -29,12 +29,12 @@
     </dependency>
     <dependency>
       <groupId>org.drools</groupId>
-      <artifactId>drools-wb-scenario-simulation-editor-api</artifactId>
+      <artifactId>drools-scenario-editor-api</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.drools</groupId>
-      <artifactId>drools-wb-scenario-simulation-editor-backend</artifactId>
+      <artifactId>drools-scenario-simulation-backend</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
