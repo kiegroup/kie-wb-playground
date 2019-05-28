@@ -29,7 +29,7 @@
     </dependency>
     <dependency>
       <groupId>org.drools</groupId>
-      <artifactId>drools-scenario-editor-api</artifactId>
+      <artifactId>drools-scenario-simulation-api</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
