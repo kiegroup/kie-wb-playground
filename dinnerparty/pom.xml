@@ -30,7 +30,7 @@
   <parent>
     <groupId>org.kie.workbench.playground</groupId>
     <artifactId>playground-parent</artifactId>
-    <version>7.29.0-SNAPSHOT</version>
+    <version>7.29.0.Final</version>
   </parent>
   <artifactId>dinnerparty</artifactId>
   <packaging>kjar</packaging>
