@@ -33,6 +33,10 @@
   <name>KIE Workbench Playground Parent</name>
   <description>KIE Workbench Playground Parent</description>
 
+  <properties>
+    <generateModel>NO</generateModel>
+  </properties>
+
   <modules>
     <module>curriculumcourse</module>
     <module>dinnerparty</module>
