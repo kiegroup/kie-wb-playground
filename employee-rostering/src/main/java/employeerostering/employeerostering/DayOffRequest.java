@@ -26,7 +26,7 @@ public class DayOffRequest implements java.io.Serializable {
      *
      * @see <a href="https://github.com/x-stream/xstream/issues/75">XStream#75</a>
      */
-    @com.thoughtworks.xstream.annotations.XStreamConverter(org.kie.soup.commons.xstream.LocalDateXStreamConverter.class)
+    @com.thoughtworks.xstream.annotations.XStreamConverter(org.kie.soup.xstream.LocalDateXStreamConverter.class)
     private java.time.LocalDate date;
 
     public DayOffRequest() {
