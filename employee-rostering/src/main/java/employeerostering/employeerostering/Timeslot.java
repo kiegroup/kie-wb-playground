@@ -25,9 +25,9 @@ public class Timeslot implements java.io.Serializable {
 
     static final long serialVersionUID = 1L;
 
-    @com.thoughtworks.xstream.annotations.XStreamConverter(org.kie.soup.commons.xstream.LocalDateTimeXStreamConverter.class)
+    @com.thoughtworks.xstream.annotations.XStreamConverter(org.kie.soup.xstream.LocalDateTimeXStreamConverter.class)
     private java.time.LocalDateTime startTime;
-    @com.thoughtworks.xstream.annotations.XStreamConverter(org.kie.soup.commons.xstream.LocalDateTimeXStreamConverter.class)
+    @com.thoughtworks.xstream.annotations.XStreamConverter(org.kie.soup.xstream.LocalDateTimeXStreamConverter.class)
     private java.time.LocalDateTime endTime;
 
     public Timeslot() {

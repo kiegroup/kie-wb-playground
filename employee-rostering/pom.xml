@@ -49,7 +49,7 @@
     </dependency>
     <dependency>
       <groupId>org.kie.soup</groupId>
-      <artifactId>kie-soup-commons</artifactId>
+      <artifactId>kie-soup-xstream</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
