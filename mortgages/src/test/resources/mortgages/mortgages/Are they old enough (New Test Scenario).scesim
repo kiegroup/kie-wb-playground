@@ -53,7 +53,7 @@
           <factAlias>Applicant</factAlias>
           <expressionAlias>age</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>254.0</columnWidth>
+          <columnWidth>212.60000000000002</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -61,22 +61,22 @@
               <step>LoanApplication</step>
             </ExpressionElement>
             <ExpressionElement>
-              <step>amount</step>
+              <step>approved</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1591622209590</name>
+            <name>1591876615315</name>
             <type>GIVEN</type>
           </expressionIdentifier>
           <factIdentifier>
             <name>1591622209590</name>
             <className>mortgages.mortgages.LoanApplication</className>
           </factIdentifier>
-          <className>java.lang.Integer</className>
+          <className>java.lang.Boolean</className>
           <factAlias>LoanApplication</factAlias>
-          <expressionAlias>amount</expressionAlias>
+          <expressionAlias>approved</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>254.0</columnWidth>
+          <columnWidth>212.60000000000002</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -99,7 +99,7 @@
           <factAlias>IncomeSource</factAlias>
           <expressionAlias>amount</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>254.00000000000006</columnWidth>
+          <columnWidth>212.60000000000002</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -122,7 +122,30 @@
           <factAlias>LoanApplication</factAlias>
           <expressionAlias>approved</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>254.0</columnWidth>
+          <columnWidth>212.60000000000002</columnWidth>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>LoanApplication</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>explanation</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1591874776961</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>1591622209590</name>
+            <className>mortgages.mortgages.LoanApplication</className>
+          </factIdentifier>
+          <className>java.lang.String</className>
+          <factAlias>LoanApplication</factAlias>
+          <expressionAlias>explanation</expressionAlias>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>212.60000000000002</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -138,7 +161,7 @@
               <name>Description</name>
               <type>OTHER</type>
             </expressionIdentifier>
-            <rawValue class="string">Young bob want a loan</rawValue>
+            <rawValue class="string">Young Bob want a loan</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -179,7 +202,77 @@
               <className>mortgages.mortgages.LoanApplication</className>
             </factIdentifier>
             <expressionIdentifier>
+              <name>1|2</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">false</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
               <name>1591622209590</name>
+              <className>mortgages.mortgages.LoanApplication</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1591874776961</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">Underage</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1591622209590</name>
+              <className>mortgages.mortgages.LoanApplication</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1591876615315</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">true</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">Adult Anna  want a loan</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">2</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1|1</name>
+              <className>mortgages.mortgages.Applicant</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|1</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">27</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1591622221147</name>
+              <className>mortgages.mortgages.IncomeSource</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1591622221147</name>
               <type>GIVEN</type>
             </expressionIdentifier>
             <rawValue class="string">0</rawValue>
@@ -193,7 +286,29 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">false</rawValue>
+            <rawValue class="string">true</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1591622209590</name>
+              <className>mortgages.mortgages.LoanApplication</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1591874776961</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">null</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>1591622209590</name>
+              <className>mortgages.mortgages.LoanApplication</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1591876615315</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">true</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
