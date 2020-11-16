@@ -1,0 +1,33 @@
+<org.drools.core.rule.KieModuleMetaInfo>
+  <typeMetaInfos>
+    <entry>
+      <string>com.myspace.mortgage_app.ValidationErrorDO</string>
+      <org.drools.core.rule.TypeMetaInfo>
+        <kind>CLASS</kind>
+        <role>FACT</role>
+        <isDeclaredType>false</isDeclaredType>
+      </org.drools.core.rule.TypeMetaInfo>
+    </entry>
+    <entry>
+      <string>com.myspace.mortgage_app.Application</string>
+      <org.drools.core.rule.TypeMetaInfo>
+        <kind>CLASS</kind>
+        <role>FACT</role>
+        <isDeclaredType>false</isDeclaredType>
+      </org.drools.core.rule.TypeMetaInfo>
+    </entry>
+  </typeMetaInfos>
+  <rulesByPackage>
+    <entry>
+      <string>com.myspace.mortgage_app</string>
+      <set>
+        <string>Row 2 MortgageDecisionTable</string>
+        <string>RetractValidationErr</string>
+        <string>Validate Down Payment</string>
+        <string>RuleFlow-Split-Mortgage_Process.MortgageApprovalProcess-4-7-DROOLS_DEFAULT</string>
+        <string>Row 1 MortgageDecisionTable</string>
+        <string>RuleFlow-Split-Mortgage_Process.MortgageApprovalProcess-4-5-DROOLS_DEFAULT</string>
+      </set>
+    </entry>
+  </rulesByPackage>
+</org.drools.core.rule.KieModuleMetaInfo>
