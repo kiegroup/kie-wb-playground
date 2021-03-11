@@ -30,7 +30,7 @@
   <parent>
     <groupId>org.kie.workbench.playground</groupId>
     <artifactId>playground-parent</artifactId>
-    <version>7.44.0-SNAPSHOT</version>
+    <version>7.52.0-SNAPSHOT</version>
   </parent>
   <artifactId>curriculumcourse</artifactId>
   <packaging>kjar</packaging>
@@ -51,6 +51,10 @@
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-persistence-jaxb</artifactId>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.spec.javax.annotation</groupId>
+      <artifactId>jboss-annotations-api_1.2_spec</artifactId>
     </dependency>
   </dependencies>
 
