@@ -26,11 +26,7 @@
     <fileSet>
       <useDefaultExcludes>false</useDefaultExcludes>
       <includes>
-        <include>curriculumcourse/pom.xml</include>
-        <include>dinnerparty/pom.xml</include>
-        <include>employee-rostering/pom.xml</include>
         <include>mortgages/pom.xml</include>
-        <include>optacloud/pom.xml</include>
         <include>traffic-violation/pom.xml</include>
       </includes>
       <excludes>
@@ -44,11 +40,7 @@
       <directory>../</directory>
       <useDefaultExcludes>false</useDefaultExcludes>
       <includes>
-        <include>curriculumcourse/**</include>
-        <include>dinnerparty/**</include>
-        <include>employee-rostering/**</include>
         <include>mortgages/**</include>
-        <include>optacloud/**</include>
         <include>traffic-violation/**</include>
       </includes>
       <excludes>
