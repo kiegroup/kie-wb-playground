@@ -38,12 +38,8 @@
       <directory>../</directory>
       <useDefaultExcludes>false</useDefaultExcludes>
       <includes>
-        <include>curriculumcourse/**</include>
-        <include>dinnerparty/**</include>
-        <include>employee-rostering/**</include>
         <include>evaluation/**</include>
         <include>mortgages/**</include>
-        <include>optacloud/**</include>
         <include>traffic-violation/**</include>
         <include>itorders/**</include>
         <include>mortgage-process/**</include>
